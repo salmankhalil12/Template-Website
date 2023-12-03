@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <script src="./js/app.js"></script>
+        <script src="./js/fonts.js"></script>
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="header_left">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="header_right">
+                <i class="fa-solid fa-envelope"></i>
+                <p class="header_p">romanstar786@gmail.com</p>
+                <p class="header_p">|</p>
+                <i class="fa-solid fa-phone"></i>
+                <p class="header_p">+92317-4742653</p>
+            </div>
+        </div>
+        <!-- Slider -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Image/s3.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Image/s3.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Image/s3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider_text">
+                    <h1>EVENT MANAGEMENT</h1>
+                </div>
+                <div class="slider_button">
+                    <!-- Login -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"
+                                        id="exampleModalLabel"
+                                        style="color:black;">Login Form</h5>
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name"
+                                                class="col-form-label"
+                                                style="color:black;">Email:</label>
+                                            <input type="email"
+                                                class="form-control"
+                                                id="recipient-email"
+                                                placeholder="Enter Your Email"
+                                                required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text"
+                                                class="col-form-label"
+                                                style="color:black;">Password:</label>
+                                            <input type="password"
+                                                class="form-control"
+                                                id="recipient-password"
+                                                placeholder="Enter Your Password" required>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn
+                                        btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn
+                                        btn-primary">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Login End Form -->
+                    <button class="S_button" type="button" class="btn
+                        btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" data-bs-whatever="@mdo">Sign
+                        In</button>
+                    <!-- Sign UP Form -->
+                    <button class="S_button" type="button" class="btn
+                        btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Sign Up</button>
+                    <div class="modal fade" id="staticBackdrop"
+                        data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"
+                                        id="staticBackdropLabel"
+                                        style="color:black;">Pleas Sign Up
+                                        Account</h5>
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name"
+                                                class="col-form-label"
+                                                style="color:black;">First Name:</label>
+                                            <input type="text"
+                                                class="form-control"
+                                                id="recipient-email"
+                                                placeholder="Enter Your First Name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name"
+                                                class="col-form-label"
+                                                style="color:black;">Last Name:</label>
+                                            <input type="text"
+                                                class="form-control"
+                                                id="recipient-email"
+                                                placeholder="Enter Your Last Name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name"
+                                                class="col-form-label"
+                                                style="color:black;">Email:</label>
+                                            <input type="email"
+                                                class="form-control"
+                                                id="recipient-email"
+                                                placeholder="Enter Your Email"
+                                                required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text"
+                                                class="col-form-label"
+                                                style="color:black;">Password:</label>
+                                            <input type="password"
+                                                class="form-control"
+                                                id="recipient-password"
+                                                placeholder="Enter Your Password" required>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn
+                                        btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn
+                                        btn-primary">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End Slider -->
+
+        <!-- Section One Our Seviers -->
+        <div class="section">
+            <h1>Our Best Services For You</h1>
+            <div class="section_div1">
+                <div>
+                    <img src="./Image/m1.jpg" alt="" srcset=""
+                        class="image_circle">
+                    <h1 class="s_h1">PARTY HALL</h1>
+                    <h6 class="s_h6">35 EVENTS | 45 SERVICES PRODUCTS</h6>
+                </div>
+                <div>
+                    <img src="./Image/m2.jpg" alt="" srcset=""
+                        class="image_circle">
+                    <h1 class="s_h1">SALOON</h>
+                    <h6 class="s_h6">35 EVENTS | 45 SERVICES PRODUCTS</h6>
+                </div>
+                <div>
+                    <img src="./Image/m3.jpg" alt="" srcset=""
+                        class="image_circle">
+                    <h1 class="s_h1">CATERING SERVICES</h>
+                    <h6 class="s_h6">35 EVENTS | 45 SERVICES PRODUCTS</h6>
+                </div>
+                <div>
+                    <img src="./Image/m4.jpg" alt="" srcset=""
+                        class="image_circle">
+                    <h1 class="s_h1">DRESS DESIGNER</h>
+                    <h6 class="s_h6">35 EVENTS | 45 SERVICES PRODUCTS</h6>
+                </div>
+            </div>
+            <div class="section_div1">
+                <div>
+                    <img src="./Image/m1.jpg" alt="" srcset=""
+                        class="image_circle">
+                    <h1 class="s_h1">PARTY HALL</h1>
+                    <h6 class="s_h6">35 EVENTS | 45 SERVICES PRODUCTS</h6>
+                </div>
+                <div>
+                    <img src="./Image/m2.jpg" alt="" srcset=""
+                        class="image_circle">
+                    <h1 class="s_h1">SALOON</h>
+                    <h6 class="s_h6">35 EVENTS | 45 SERVICES PRODUCTS</h6>
+                </div>
+                <div>
+                    <img src="./Image/m3.jpg" alt="" srcset=""
+                        class="image_circle">
+                    <h1 class="s_h1">CATERING SERVICES</h>
+                    <h6 class="s_h6">35 EVENTS | 45 SERVICES PRODUCTS</h6>
+                </div>
+                <div>
+                    <img src="./Image/m4.jpg" alt="" srcset=""
+                        class="image_circle">
+                    <h1 class="s_h1">DRESS DESIGNER</h>
+                    <h6 class="s_h6">35 EVENTS | 45 SERVICES PRODUCTS</h6>
+                </div>
+            </div>
+        </div>
+        <!-- Section One End Our Seviers -->
+        <!-- Section Two  -->
+        <div class="section2">
+            <div class="heading"><h1>HOW BOOK SERVICES ?</h1></div>
+            <div class="section2_div">
+                <div class="one">
+                    <img src="./Image/m9.png" alt="" srcset="" class="image_circle2">
+                    <h2 class="s2_h2">Search Services</h2>
+                    <h6 class="s2_h6">Use this information to configure and manage Alfresco
+                        Search Services 2.0 for Alfresco Content Services.
+                    </h6>
+                </div>
+                <div class="one">
+                    <img src="./Image/m10.png" alt="" srcset="" class="image_circle2">
+                    <h2 class="s2_h2">Search Services</h2>
+                    <h6 class="s2_h6">Use this information to configure and manage Alfresco
+                        Search Services 2.0 for Alfresco Content Services.
+                    </h6>
+                </div>
+                <div class="one">
+                    <img src="./Image/m11.png" alt="" srcset="" class="image_circle2">
+                    <h2 class="s2_h2">Search Services</h2>
+                    <h6 class="s2_h6">Use this information to configure and manage Alfresco
+                        Search Services 2.0 for Alfresco Content Services.
+                    </h6>
+                </div>
+                <div class="one">
+                    <h2 class="s2_h2">Watch Video</h2>
+                    <video width="100%" height="300px" controls class="video">
+                        <source src="https://youtu.be/mz58VHTTE5o?list=PL5-AGUVYC4o0FlmYNEUPGCcxzErnLV7F-" type="video/mp4">
+                        <!-- <source src="movie.ogg" type="video/ogg"> -->
+                        Your browser does not support the video tag.
+                      </video>
+                    <!-- <video src="https://youtu.be/mz58VHTTE5o?list=PL5-AGUVYC4o0FlmYNEUPGCcxzErnLV7F-"></video> -->
+                    <!-- <img src="./Image/m9.png" alt="" srcset="" class="image_circle2"> -->
+                </div>
+
+            </div>
+            
+        </div>
+        <!-- Section Two End -->
+        <!-- Section Three -->
+            <div class="section3">
+                <div class="right">
+                    <div>
+                        <img src="./Image/m12.png" alt="" srcset="" class="image3">
+                        <h3>For Customer</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa dolores fugit culpa obcaecati ipsam itaque delectus,
+                            sint quibusdam nisi rem repellendus unde a, exercitationem placeat eius ducimus officia aliquam reiciendis?</p>
+                        </div>
+                        <div>
+                            <img src="./Image/m12.jpg" alt="" srcset="" class="image3">
+                            <!-- <img src="./Image/m12.png" alt="" srcset="" class="image3"> -->
+                            <h3>For Customer</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa dolores fugit culpa obcaecati ipsam itaque delectus,
+                                sint quibusdam nisi rem repellendus unde a, exercitationem placeat eius ducimus officia aliquam reiciendis?</p>
+                    </div>
+                </div>
+                <div class="left">
+                    <div>
+                            <h1>Love In Commment</h1>
+                            <img src="./Image/m14.jpg" alt="" srcset=""
+                                class="image_circle">
+                            <h5>Asad Umer</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quidem animi,
+                                accusantium sapiente doloremque cupiditate reiciendis aliquid, nesciunt deserunt velit nobis hic doloribus dolorem beatae voluptas optio minima, nemo fugit.
+                            </p>
+                        </div>
+                </div>
+
+            </div>
+        <!-- Section Three -->
+        <!-- Foooter -->
+        <div class="footer">
+            <div class="footer1">
+                <div>
+                    Connect with us on :
+                    <i class="fa-brands fa-facebook f_icon"></i>
+                    <i class="fa-brands fa-instagram f_icon"></i>
+                    <i class="fa-brands fa-linkedin f_icon"></i>
+                    <i class="fa-brands fa-twitter f_icon"></i>
+                    <i class="fa-brands fa-google f_icon"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone f_icon"></i>
+                    +92317-4742653
+                    <i class="fa-solid fa-envelope f_icon"></i>
+                    romanstar786@gmail.com
+
+                </div>
+            </div>
+            <div class="footer2">
+                <p>Copy rght 2023</p>
+            </div>
+
+        </div>
+
+
+    </body>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</html>
